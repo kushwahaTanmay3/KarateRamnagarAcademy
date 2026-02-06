@@ -588,6 +588,7 @@ footer {
   }
 
   .nav {
+    width:80%;
     margin: auto;
     margin-top: 15px;
     margin-left: 10px;
@@ -739,5 +740,6 @@ footer {
     font-size: 30px;
     padding: 6px 12px;
   }
+
 
 }
