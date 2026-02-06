@@ -691,9 +691,14 @@ footer {
   .kslider-frame {
     height: auto;
   }
-
+   .branches{
+     display:flex;
+     flex-direction:column;
 }
-
+.logo{
+  width:230px;
+}
+}
 /* Small Mobile (max-width: 480px) */
 @media (max-width: 480px) {
   .left {
@@ -743,3 +748,4 @@ footer {
 
 
 }
+
