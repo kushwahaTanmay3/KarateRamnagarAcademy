@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achievements | Karate Ramnagar Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+  margin:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color:#1a1a1a;
+  font-family:"Roboto Condensed",sans-serif;
+  color:gray;
+}
+
+/* ===== NAVBAR ===== */
+.nav{
+  margin:20px auto;
+  width:90%;
+  height:70px;
+  border-radius:20px;
+  padding:0 25px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  left:0;
+  right:0;
+  z-index:100;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bolder;
+  color:red;
+}
+
+.list{
+  display:flex;
+}
+
+.list li{
+  list-style:none;
+  margin-left:40px;
+}
+
+.list li a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+}
+
+.list li a:hover{
+  padding:8px 12px;
+  background:rgba(255,0,0,0.2);
+  border-radius:6px;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.achievement-page{
+  padding-top:120px;
+  padding-bottom:60px;
+}
+
+/* ===== TITLE ===== */
+.achievement-title{
+  text-align:center;
+  font-size:34px;
+  font-weight:bold;
+  margin-bottom:50px;
+}
+
+/* ===== ACHIEVEMENT CARD ===== */
+.achievement-card{
+  width:90%;
+  margin:0 auto 50px;
+  padding:30px;
+  display:flex;
+  gap:40px;
+  border-radius:16px;
+  background:linear-gradient(to right,#000,#8b0000);
+  box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+.achievement-img{
+  width:40%;
+}
+
+.achievement-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:16px;
+}
+
+.achievement-content{
+  width:60%;
+}
+
+.achievement-content h2{
+  color:white;
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.achievement-content h4{
+  color:#ccc;
+  margin-bottom:15px;
+}
+
+.achievement-content p{
+  font-size:18px;
+  line-height:1.7;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:linear-gradient(to right,#8b0000,#000);
+  height:80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  font-size:18px;
+  font-weight:bold;
+  color:gray;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+
+
+  .achievement-card{
+    flex-direction:column;
+  }
+
+  .achievement-img,
+  .achievement-content{
+    width:100%;
+  }
+
+  .achievement-title{
+    font-size:26px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="nav">
+  <div class="logo">Karate Ramnagar Academy</div>
+  <ul class="list">
+    <li><a href="index.html">← Back to Home</a></li>
+  </ul>
+</nav>
+
+<!-- ===== ACHIEVEMENT SECTION ===== -->
+<section class="achievement-page">
+
+<h1 class="achievement-title">Our Achievements</h1>
+
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="">
+  </div>
+  <div class="achievement-content">
+    <h2>National Karate Championship</h2>
+    <h4>Gold Medal • 2024</h4>
+    <p>
+      Our students delivered an outstanding performance at the National Karate
+      Championship, earning gold medals through discipline, dedication, and
+      professional training.
+    </p>
+  </div>
+</div>
+
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achievement2.jpg">
+  </div>
+  <div class="achievement-content">
+    <h2>State Level Tournament</h2>
+    <h4>Overall Champion • 2023</h4>
+    <p>
+      Karate Academy achieved the Overall Championship title, proving excellence
+      in technique, stamina, and fighting spirit.
+    </p>
+  </div>
+</div>
+
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achievement3.jpg">
+  </div>
+  <div class="achievement-content">
+    <h2>Inter School Karate Meet</h2>
+    <h4>Best Academy Award</h4>
+    <p>
+      Awarded Best Karate Academy for consistent results and disciplined coaching
+      standards across multiple tournaments.
+    </p>
+  </div>
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <span>© Karate Ramnagar Academy</span>
+ 
+</footer>
+
+</body>
+</html>
