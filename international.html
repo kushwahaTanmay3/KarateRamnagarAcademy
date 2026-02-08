@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Tour | Karate Ramnagar Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{margin:0; box-sizing:border-box;}
+
+body{
+  background:#1a1a1a;
+  font-family:"Roboto Condensed",sans-serif;
+  color:gray;
+}
+
+/* ===== NAV ===== */
+.nav{
+  margin:20px auto;
+  width:90%;
+  height:70px;
+  border-radius:20px;
+  padding:0 25px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  left:0; right:0;
+  z-index:100;
+}
+
+.logo{color:red; font-size:24px; font-weight:bold;}
+
+.list li{list-style:none;}
+.list a{color:white; text-decoration:none; font-size:18px;}
+
+/* ===== PAGE ===== */
+.tour-page{
+  padding-top:120px;
+  padding-bottom:60px;
+}
+
+.tour-title{
+  text-align:center;
+  font-size:34px;
+  margin-bottom:40px;
+}
+
+/* ===== FLAGS ===== */
+.flags{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin-bottom:50px;
+}
+
+.flags img{
+  width:80px;
+  height:50px;
+  border-radius:6px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.6);
+}
+
+/* ===== SLIDER ===== */
+.slider{
+  width:72%;
+  height:600px;
+  margin:0 auto 60px;
+  border-radius:18px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 15px 30px rgba(0,0,0,0.6);
+}
+
+.slides{
+  display:flex;
+  width:300%;
+  height:100%;
+  animation:slide 12s infinite;
+}
+
+.slides img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+@keyframes slide{
+  0%{margin-left:0;}
+  33%{margin-left:0;}
+  36%{margin-left:-100%;}
+  66%{margin-left:-100%;}
+  69%{margin-left:-200%;}
+  100%{margin-left:-200%;}
+}
+
+/* ===== TOUR CARD ===== */
+.tour-card{
+  width:90%;
+  margin:0 auto 50px;
+  padding:30px;
+  display:flex;
+  gap:40px;
+  border-radius:16px;
+  background:linear-gradient(to right,#000,#8b0000);
+}
+
+.tour-img{width:40%;}
+.tour-img img{
+  width:100%;
+  height:100%;
+  border-radius:16px;
+  object-fit:cover;
+}
+
+.tour-content{width:60%;}
+.tour-content h2{color:white; margin-bottom:10px;}
+.tour-content h4{color:#ccc; margin-bottom:15px;}
+.tour-content p{font-size:18px; line-height:1.7;}
+
+/* ===== FOOTER ===== */
+footer{
+  height:80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(to right,#8b0000,#000);
+  font-weight:bold;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+  .tour-card{flex-direction:column;}
+  .tour-img,.tour-content{width:100%;}
+  .slider{height:250px;}
+  .tour-title{font-size:26px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="logo">Karate Ramnagar Academy</div>
+  <ul class="list">
+    <li><a href="index.html">← Back to Home</a></li>
+  </ul>
+</nav>
+
+<section class="tour-page">
+
+<h1 class="tour-title">International Karate Tours</h1>
+
+<!-- ===== FLAGS ===== -->
+<div class="flags">
+  <img src="srilanka.webp" title="Sri lanka">
+  <img src="UAE.webp" title="UAE">
+  <img src="Uzbekistan.png" title="Uzbekistan">
+  <img src="Thailand.webp"  title="Thailand">
+</div>
+
+<!-- ===== GALLERY SLIDER ===== -->
+<!-- <div class="slider">
+  <div class="slides">
+    <img src="thailandTour.png">
+    <img src="UAEtour.png">
+  </div>
+</div> -->
+
+<!-- ===== TOUR DETAILS ===== -->
+<div class="tour-card">
+  <div class="tour-img">
+    <img src="thailandTour.png">
+  </div>
+  <div class="tour-content">
+    <h2>OPEN THAILAND - Thailand</h2>
+    <h4>Thailand • 2025</h4>
+    <p>
+      Akanksha Verma strongly participated in the Open Thailand Karate Championships held in Thailand.
+She demonstrated excellent skill, confidence, and competitive spirit while
+    </p>
+  </div>
+</div>
+
+<div class="tour-card">
+  <div class="tour-img">
+    <img src="UAEtour.png">
+  </div>
+  <div class="tour-content">
+    <h2>KARATE YOUTH LEAGUE - fujairah UAE</h2>
+    <h4>UAE• 2023</h4>
+    <p>
+     Akanksha Verma won a Bronze Medal at the Karate Youth League – Fujairah held in Fujairah, UAE, showcasing her talent and strong competitive spirit at the international level.
+    </p>
+  </div>
+</div>
+<div class="tour-card">
+  <div class="tour-img">
+    <img src="uzb2.png">
+  </div>
+  <div class="tour-content">
+    <h2>ASIAN ATHELETE UZBEKISTAN - Uzbekistan</h2>
+    <h4>Uzbekistan• 2023</h4>
+    <p>
+     Akanksha Verma participated in an international karate championship held in Uzbekistan, gaining valuable exposure at the global level.
+Though she did not win a medal, her fighting spirit, discipline, and determination reflected true sportsmanship and a champion’s mindset.
+    </p>
+  </div>
+</div>
+<div class="tour-card">
+  <div class="tour-img">
+    <img src="Srilankatour.png">
+  </div>
+  <div class="tour-content">
+    <h2>SOUTH ASIAN - Sri Lanka</h2>
+    <h4>Sri Lanka• 2022</h4>
+    <p>
+      Akanksha Verma won two Bronze Medals at the South Asian – Sri Lanka Karate Championships, showcasing her strong performance and dedication on an international platform.
+    </p>
+  </div>
+</div>
+
+</section>
+
+<footer>
+  © Karate Ramnagar Academy
+</footer>
+
+</body>
+</html>
