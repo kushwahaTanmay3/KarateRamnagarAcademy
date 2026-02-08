@@ -595,7 +595,7 @@ footer {
 
   .nav {
     position:fixed;
-    left:5px;
+    left:-5px;
     width:80%;
     margin: 5px 20px 0px;
     height:8vh;
@@ -754,5 +754,6 @@ footer {
 
 
 }
+
 
 
