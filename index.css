@@ -540,7 +540,7 @@ footer {
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
    .frame{
-    max-width:500px;
+    max-width:450px;
    }
    .kslide{
     height:50vh;
@@ -751,5 +751,6 @@ footer {
     font-size: 30px;
     padding: 6px 12px;
   }
+
 
 }
