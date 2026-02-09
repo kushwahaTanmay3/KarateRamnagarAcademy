@@ -569,10 +569,10 @@ footer {
   }
 
   .hero {
+    padding-top:50px;
     flex-direction: row;
     /* image always right */
     gap: 20px;
-    padding-top:30px;
   }
 
   .revflex {
@@ -755,6 +755,7 @@ footer {
 
 
 }
+
 
 
 
