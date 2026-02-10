@@ -569,6 +569,8 @@ footer {
   }
 
   .hero {
+    position:relative;
+    top:20px;
     padding-top:50px;
     flex-direction: row;
     /* image always right */
@@ -755,6 +757,7 @@ footer {
 
 
 }
+
 
 
 
