@@ -568,9 +568,8 @@ footer {
     color: white;
   }
 
-  .hero {
-    position:relative;
-    top:50px;
+  .hero { 
+    height:60vh;
     padding-top:50px;
     flex-direction: row;
     /* image always right */
@@ -757,6 +756,7 @@ footer {
 
 
 }
+
 
 
 
