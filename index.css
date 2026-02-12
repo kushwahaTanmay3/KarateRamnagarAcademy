@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   z-index: 11;
 }
 
@@ -757,6 +757,7 @@ footer {
 
 
 }
+
 
 
 
