@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us | Karate Ramnagar Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;box-sizing:border-box;}
+
+body{
+  background:#1a1a1a;
+  font-family:"Roboto Condensed",sans-serif;
+  color:gray;
+}
+
+/* NAVBAR */
+.nav{
+  width:90%;
+  margin:20px auto;
+  height:70px;
+  padding:0 30px;
+  border-radius:20px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:10;
+  position:relative;
+  top:10px;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bolder;
+  color:red;
+}
+
+.home-btn{
+  padding:10px 28px;
+  background:#8b0000;
+  border-radius:30px;
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.home-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 10px rgba(255,0,0,0.4);
+}
+
+/* ABOUT SECTION */
+.about-section{
+  width:95%;
+  min-height:90vh;
+  margin:120px auto 40px;
+  border-radius:16px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  padding:40px;
+}
+
+.about-box{
+  max-width:1000px;
+  margin:auto;
+  background:linear-gradient(to right,#000,#8b0000);
+  border-radius:16px;
+  padding:40px;
+}
+
+.about-box h1{
+  text-align:center;
+  color:white;
+  margin-bottom:25px;
+  font-size:34px;
+}
+
+.about-box p{
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+/* HIGHLIGHTS */
+.highlights{
+  margin-top:30px;
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.card{
+  flex:1;
+  background:#111;
+  padding:25px;
+  border-radius:16px;
+  border-top:4px solid #8b0000;
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.card h3{
+  color:white;
+  margin-bottom:10px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .highlights{
+    flex-direction:column;
+  }
+  .about-box h1{
+    font-size:26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+  <div class="logo">Karate Ramnagar Academy</div>
+  <a href="index.html" class="home-btn">← Back to Home</a>
+</div>
+
+<!-- ABOUT CONTENT -->
+<section class="about-section">
+  <div class="about-box">
+
+    <h1>About Us</h1>
+
+    <p>
+      Karate Ramnagar Academy is dedicated to building discipline, confidence,
+      and physical strength through traditional karate training.
+      We focus on character development along with self-defense skills.
+    </p>
+
+    <p>
+      Our academy regularly conducts belt examinations, championships,
+      and professional training programs for students of all age groups.
+      We believe karate is not just a sport, but a way of life.
+    </p>
+
+    <div class="highlights">
+      <div class="card">
+        <h3>🥋 Professional Training</h3>
+        <p>Certified instructors with years of karate experience.</p>
+      </div>
+
+      <div class="card">
+        <h3>🏆 Championships</h3>
+        <p>Regular participation in state & national level tournaments.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎯 Discipline & Fitness</h3>
+        <p>Focus on mental strength, discipline and physical fitness.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

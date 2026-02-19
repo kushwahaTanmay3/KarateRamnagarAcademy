@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achievements | Karate Ramnagar Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+  margin:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color:#1a1a1a;
+  font-family:"Roboto Condensed",sans-serif;
+  color:gray;
+}
+
+/* ===== NAVBAR ===== */
+.nav{
+  margin:20px auto;
+  width:90%;
+  height:70px;
+  border-radius:20px;
+  padding:0 25px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  left:0;
+  right:0;
+  z-index:100;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bolder;
+  color:red;
+}
+
+.list{
+  display:flex;
+}
+
+.list li{
+  list-style:none;
+  margin-left:40px;
+}
+
+.list li a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+}
+
+.list li a:hover{
+  padding:8px 12px;
+  background:rgba(255,0,0,0.2);
+  border-radius:6px;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.achievement-page{
+  padding-top:120px;
+  padding-bottom:60px;
+}
+
+/* ===== TITLE ===== */
+.achievement-title{
+  text-align:center;
+  font-size:34px;
+  font-weight:bold;
+  margin-bottom:50px;
+}
+
+/* ===== ACHIEVEMENT CARD ===== */
+.achievement-card{
+  width:90%;
+  margin:0 auto 50px;
+  padding:30px;
+  display:flex;
+  gap:40px;
+  border-radius:16px;
+  background:linear-gradient(to right,#000,#8b0000);
+  box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+.achievement-img{
+  width:40%;
+}
+
+.achievement-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:16px;
+}
+
+.achievement-content{
+  width:60%;
+}
+
+.achievement-content h2{
+  color:white;
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.achievement-content h4{
+  color:#ccc;
+  margin-bottom:15px;
+}
+
+.achievement-content p{
+  font-size:18px;
+  line-height:1.7;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:linear-gradient(to right,#8b0000,#000);
+  height:80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  font-size:18px;
+  font-weight:bold;
+  color:gray;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+
+
+  .achievement-card{
+    flex-direction:column;
+  }
+
+  .achievement-img,
+  .achievement-content{
+    width:100%;
+  }
+
+  .achievement-title{
+    font-size:26px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="nav">
+  <div class="logo">Karate Ramnagar Academy</div>
+  <ul class="list">
+    <li><a href="index.html">← Back to Home</a></li>
+  </ul>
+</nav>
+
+<!-- ===== ACHIEVEMENT SECTION ===== -->
+<section class="achievement-page">
+
+<h1 class="achievement-title">Our Achievements</h1>
+
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI2.png">
+  </div>
+  <div class="achievement-content">
+    <h2>3rd USKAI CUP ALL INDIA NATIONAL KARATE championship 2025</h2>
+    <h4>1st place • 2025</h4>
+    <p>
+      My team has achieved a great victory at the 3rd USKAI Cup – All India National Karate Championship 2025.
+This success is the result of our hard work, discipline, and strong team spirit.
+
+Heartfelt thanks to every player, coach, and supporter who made this achievement possible.
+    </p>
+  </div>
+</div>
+
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI1.png">
+  </div>
+  <div class="achievement-content">
+    <h2>State Level Tournament</h2>
+    <h4>Overall Champion • 2023</h4>
+    <p>
+      Karate Academy achieved the Overall Championship title, proving excellence
+      in technique, stamina, and fighting spirit.
+    </p>
+  </div>
+</div>
+
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI3.png">
+  </div>
+  <div class="achievement-content">
+    <h2>INTER DISTRICT SCHOOL KARATE CHAMPIONSHIP 2024</h2>
+    <h4>1st place • 2024</h4>
+    <p>
+      Our team delivered an outstanding performance at the Inter-District School Karate Championships, showcasing true dedication, discipline, and fighting spirit.
+
+This achievement reflects the hard work of our athletes, the guidance of our coaches, and the constant support of our team.
+    </p>
+  </div>
+</div>
+
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI4.png">
+  </div>
+  <div class="achievement-content">
+    <h2>NATIONAL CHAMPION-AKANKSHA VERMA</h2>
+    <h4>Double Gold Medalist • Award • Pune </h4>
+    <p>
+      Akanksha Verma has been awarded National Champion – Double Gold Medalist at the national-level championship held in Pune.
+This remarkable achievement reflects her exceptional skill, dedication, and hard work.
+
+We are extremely proud of her outstanding performance and wish her continued success ahead.
+    </p>
+  </div>
+</div>
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI5.png">
+  </div>
+  <div class="achievement-content">
+    <h2>AMAR UJALA KHEL KHILADI PURASKAR</h2>
+    <h4>Akanksha Verma Honored with Amar Ujala Khel Khiladi Puraskar</h4>
+    <p>
+      Akanksha Verma was honored with the Amar Ujala Khel Khiladi Puraskar for her outstanding contribution and achievements in sports. This recognition highlights her dedication, hard work, and excellence, marking a proud moment in her sporting journey.
+    </p>
+  </div>
+</div>
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI6.png">
+  </div>
+  <div class="achievement-content">
+    <h2> South Asia Karate Championship 2022</h2>
+    <h4>Akanksha Verma Wins Two Bronze Medals at South Asia Karate Championship 2022</h4>
+    <p>
+      Akanksha Verma won two bronze medals at the South Asia Karate Championship 2022, showcasing her strong performance and excellence at the international level.
+    </p>
+  </div>
+</div>
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI7.png">
+  </div>
+  <div class="achievement-content">
+    <h2>KHELO INDIA YOUTH UNIVERSITY GAMES 2021</h2>
+    <h4>Silver Medal Second Position•2021</h4>
+    <p>
+      Akanksha Verma won a Silver Medal at the Khelo India Youth University Games 2021, delivering an impressive performance at the national level. Her achievement reflects her dedication, discipline, and hard work, and stands as a proud milestone in her sporting journey, inspiring young athletes to aim higher.
+    </p>
+  </div>
+</div>
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI8.png">
+  </div>
+  <div class="achievement-content">
+    <h2>EMIRATES SPORTS KARATE OPEN-SHARJAH •2023</h2>
+    <h4>2 Bronze Medal</h4>
+    <p>
+      Akanksha Verma won  Bronze Medal at the prestigious Emirates Sports Karate Open, held in Sharjah in 2023.
+Her outstanding performance reflects her dedication, discipline, and excellence in karate.
+    </p>
+  </div>
+</div>
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI10.png">
+  </div>
+  <div class="achievement-content">
+    <h2>DAV NATIONAL SPORTS • 2025</h2>
+    <h4>Gold Medal  </h4>
+    <p>
+      Mansha Abbas won a Gold Medal at the DAV National Sports, showcasing outstanding talent and determination.
+Her performance reflected discipline, dedication, and strong competitive spirit.
+This achievement stands as a proud moment in her sporting journey.
+Winning gold highlights her hard work and consistent training.
+Her success serves as an inspiration for young and aspiring athletes.
+    </p>
+  </div>
+</div>
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI9.png">
+  </div>
+  <div class="achievement-content">
+    <h2>Karate India Organisation</h2>
+    <h4>MEDAL</h4>
+    <p>
+     Akanksha Verma won a medal at a championship organized by the Karate India Organisation, reflecting her excellence in karate.
+Her performance demonstrated strong technique, discipline, and competitive spirit.
+This achievement highlights her dedication and continuous hard work in martial arts.
+Winning at this level marks an important milestone in her sports career.
+Her success stands as an inspiration for young karate athletes across the country.
+    </p>
+  </div>
+</div>
+<div class="achievement-card">
+  <div class="achievement-img">
+    <img src="achieveAI11.png">
+  </div>
+  <div class="achievement-content">
+    <h2>National School Games 2024–25</h2>
+    <h4>SGFI BRONZE MEDAL</h4>
+    <p>
+      Ratnam Maurya won a medal at the National School Games 2024–25 held in Ludhiana, Punjab.
+This achievement highlights her strong performance and competitive spirit at the national level.
+Her dedication and consistent training played a key role in this success.
+Winning a medal at such a prestigious event is a proud milestone in her sports journey.
+Her achievement serves as an inspiration for young and aspiring athletes.
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <span>© Karate Ramnagar Academy</span>
+ 
+</footer>
+
+</body>
+</html>

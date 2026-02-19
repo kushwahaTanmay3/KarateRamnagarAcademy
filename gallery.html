@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Gallery | Karate Ramnagar Academy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== GLOBAL ===== */
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #1a1a1a;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    /* ===== NAV ===== */
+    .nav {
+      margin: 20px auto;
+      width: 90%;
+      height: 70px;
+      border-radius: 20px;
+      padding: 0 25px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(6px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      color: red;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .list li {
+      list-style: none;
+    }
+
+    .list a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* ===== PAGE ===== */
+    .gallery-page {
+      padding-top: 120px;
+      padding-bottom: 60px;
+    }
+
+    /* ===== PHOTO GRID ===== */
+    .gallery {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    /* ===== IMAGE CARD ===== */
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 18px;
+      background: #000;
+      transition: 0.4s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    /* ===== HOVER ===== */
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 2px #8b0000;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #8b0000, #000);
+      color: #ccc;
+      font-weight: bold;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:768px) {
+      .gallery img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="logo">Karate Ramnagar Academy</div>
+    <ul class="list">
+      <li><a href="index.html">← Back to Home</a></li>
+    </ul>
+  </nav>
+
+  <section class="gallery-page">
+
+    <div class="gallery">
+      <img src="group1.jpg">
+      <img src="group2.jpg">
+      <img src="group3.jpg">
+      <img src="Team2.jpg">
+      <img src="Team3.jpg">
+      <img src="gallery5.jpeg">
+      <img src="gallery2.jpeg">
+      <img src="gallery3.jpeg">
+      <img src="gallery7.jpeg">
+      <img src="gallery9.jpeg">
+      
+      <img src="edit5.jpeg">
+      <img src="edit6.jpeg">
+      <img src="edit2 - Copy.jpeg">
+      <img src="gallery13.jpeg">
+      <img src="gallery14.jpeg">
+      <img src="gallery15.jpeg">
+      <img src="gallery16.jpeg">
+      <img src="gallery17.jpeg">
+      <img src="gallery18.jpeg">
+      <img src="gallerye22.jpeg">
+      <img src="gallery23.jpeg">
+      <img src="gallery27.jpeg">
+      <img src="gallery28.jpeg">
+      <img src="gallery31.jpeg">
+      <img src="gallery32.jpeg">
+      <img src="gallery33.jpeg">
+      <img src="gallery34.jpeg">
+      <img src="gallery35.jpeg">
+      <img src="gallery36.jpeg">
+      <img src="gallery37.jpeg">
+      <img src="gallery39.jpeg">
+      <img src="gallery40.jpeg">
+      <img src="gallery42.jpeg">
+      <img src="gallery43.jpeg">
+      <img src="gallery46.jpeg">
+      <img src="gallery48.jpeg">
+      <img src="gallery50.jpeg">
+      <img src="gallery51.jpeg">
+      <img src="gallery52.jpeg">
+      <img src="gallery53.jpeg">
+      <img src="gallery54.jpeg">
+      <img src="gallery55.jpeg">
+      <img src="gallery57.jpeg">
+      <img src="gallery58.jpeg">
+      <img src="gallery60.jpeg">
+      <img src="gallery61.jpeg">
+      <img src="gallery63.jpeg">
+      
+    </div>
+
+  </section>
+
+  <footer>
+    © Karate Ramnagar Academy
+  </footer>
+
+</body>
+
+</html>

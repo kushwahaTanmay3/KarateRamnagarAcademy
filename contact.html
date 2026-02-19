@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Karate Ramnagar Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;box-sizing:border-box;}
+
+body{
+  background:#1a1a1a;
+  font-family:"Roboto Condensed",sans-serif;
+  color:gray;
+}
+
+/* NAVBAR */
+.nav{
+  width:90%;
+  margin:20px auto;
+  height:70px;
+  padding:0 30px;
+  border-radius:20px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:10;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bolder;
+  color:red;
+}
+
+.contact-btn{
+  padding:10px 28px;
+  background:#8b0000;
+  border-radius:30px;
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.contact-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 10px rgba(255,0,0,0.4);
+}
+
+/* CONTACT SECTION */
+.contact-section{
+  width:95%;
+  min-height:90vh;
+  margin:120px auto 40px;
+  border-radius:16px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+
+.contact-box{
+  width:100%;
+  max-width:800px;
+  background:linear-gradient(to right,#000,#8b0000);
+  border-radius:16px;
+  padding:40px;
+  text-align:center;
+}
+
+.contact-box h1{
+  color:white;
+  margin-bottom:20px;
+  font-size:32px;
+}
+
+.contact-box p{
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.info{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.info-box{
+  background:#111;
+  padding:18px;
+  border-radius:12px;
+  border-top:4px solid #8b0000;
+  font-size:18px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .nav{
+    padding:15px;
+    height:auto;
+  }
+  .logo{
+    font-size:20px;
+  }
+  .contact-btn{
+    padding:8px 20px;
+    font-size:14px;
+  }
+  .contact-box h1{
+    font-size:26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+  <div class="logo">Karate Ramnagar Academy</div>
+  <a href="index.html" class="contact-btn">back to home</a>
+</div>
+
+<!-- CONTACT DETAILS -->
+<section class="contact-section">
+  <div class="contact-box">
+    <h1>Contact Details</h1>
+    <p>For training, belt exams and championships, reach us here</p>
+
+    <div class="info">
+      <div class="info-box">
+        📍 <b>Address:</b><br>
+         Karate Ramnagar Academy, Ramnagar ,Varanasi
+      </div>
+
+      <div class="info-box">
+        📞 <b>Phone:</b><br>
+        +91 81157 85656
+      </div>
+
+      <div class="info-box">
+        ✉️ <b>Email:</b><br>
+        karateacademy@email.com
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

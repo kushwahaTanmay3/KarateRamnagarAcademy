@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Belt Examination | Karate Ramnagar Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+/* ===== RESET ===== */
+*{margin:0; box-sizing:border-box;}
+
+:root{
+  --bg:#1a1a1a;
+  --black:#000000;
+  --red:#8b0000;
+  --red-soft:#7a0000;
+  --card:#111;
+  --text:#b5b5b5;
+  --white:#fff;
+}
+
+/* ===== BASE ===== */
+body{
+  background:var(--bg);
+  font-family:"Roboto Condensed",sans-serif;
+  color:var(--text);
+}
+
+/* ===== NAV ===== */
+.nav{
+  width:80%;
+  margin:10px auto;
+  padding:18px 30px;
+  border-radius:18px;
+  background:rgba(0,0,0,0.65);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:10px;
+  left:0; right:0;
+  z-index:10;
+}
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:red;
+}
+.list{display:flex;}
+.list li{list-style:none; margin-left:35px;}
+.list a{color:white; text-decoration:none;}
+.list a:hover{
+  padding:6px 10px;
+  background:rgba(255,0,0,0.2);
+  border-radius:6px;
+}
+
+/* ===== HEADER STRIP (NEW THEME) ===== */
+.header-strip{
+  margin-top:110px;
+  padding:60px 20px;
+  text-align:center;
+  background:
+    linear-gradient(180deg, rgba(139,0,0,0.9), rgba(0,0,0,0.95));
+}
+.header-strip h1{
+  color:white;
+  font-size:36px;
+}
+.header-strip p{
+  margin-top:10px;
+  font-size:18px;
+}
+
+/* ===== SECTION ===== */
+.section{
+  width:90%;
+  max-width:1100px;
+  margin:50px auto;
+}
+
+/* ===== INFO BLOCK ===== */
+.info-block{
+  background:linear-gradient(135deg, var(--black), var(--red-soft));
+  padding:30px;
+  border-radius:18px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  font-size:18px;
+}
+
+/* ===== TITLE ===== */
+.title{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:25px;
+  color:#d0d0d0;
+}
+
+/* ===== BELT LIST ===== */
+.belt-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+.belt{
+  padding:18px;
+  border-radius:14px;
+  background:linear-gradient(135deg, #111, #6e0000);
+  text-align:center;
+  font-size:17px;
+}
+
+/* ===== EXAM POINTS ===== */
+.exam-points{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.point{
+  padding:16px;
+  border-radius:14px;
+  background:#111;
+  border-left:4px solid var(--red);
+}
+
+/* ===== ACTION ===== */
+.action{
+  margin:50px auto;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+.action a{
+  padding:14px 36px;
+  border-radius:30px;
+  background:linear-gradient(to right,var(--red),#000);
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  transition:.3s;
+}
+.action a:hover{transform:translateY(-6px);}
+
+/* ===== FOOTER ===== */
+footer{
+  background:linear-gradient(to right,var(--red),#000);
+  padding:25px;
+  text-align:center;
+  font-size:18px;
+  margin-top:60px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .info-block{grid-template-columns:1fr;}
+  .header-strip h1{font-size:28px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <span class="logo">Karate Ramnagar Academy</span>
+  <ul class="list">
+    <li><a href="index.html">← Back to Home</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<section class="header-strip">
+  <h1>Karate Belt Examination</h1>
+  <p>Evaluation of Skill • Discipline • Growth</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2 class="title">About Belt Examination</h2>
+  <div class="info-block">
+    <div>
+      Belt examination is a structured evaluation of a student’s karate journey.
+      It checks technical skills, physical strength, focus, and discipline.
+    </div>
+    <div>
+      Only eligible students who complete the required training period
+      are allowed to appear for the belt examination.
+    </div>
+  </div>
+</section>
+
+<!-- BELT SYSTEM -->
+<section class="section">
+  <h2 class="title">Karate Belt System</h2>
+  <div class="belt-list">
+    <div class="belt">White Belt – Beginner</div>
+    <div class="belt">Yellow Belt – Basics</div>
+    <div class="belt">Orange Belt – Coordination</div>
+    <div class="belt">Green Belt – Intermediate</div>
+    <div class="belt">Blue Belt – Advanced</div>
+    <div class="belt">Brown Belt – Pre Black</div>
+    <div class="belt">Black Belt – Mastery</div>
+  </div>
+</section>
+
+<!-- EXAM CONTENT -->
+<section class="section">
+  <h2 class="title">What Happens in Exam</h2>
+  <div class="exam-points">
+    <div class="point">✔ Kihon (Basic Techniques)</div>
+    <div class="point">✔ Kata (Forms)</div>
+    <div class="point">✔ Kumite (Sparring)</div>
+    <div class="point">✔ Discipline & Attitude</div>
+  </div>
+</section>
+
+<!-- ACTION -->
+<!-- <div class="action">
+  <a href="registration.html">Register for Exam</a>
+  <a href="https://wa.me/91XXXXXXXXXX">WhatsApp Enquiry</a>
+</div> -->
+
+<!-- FOOTER -->
+<footer>
+  © Karate Ramnagar Academy • Discipline • Strength • Respect
+</footer>
+
+</body>
+</html>

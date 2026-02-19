@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Karate Championship | Karate Ramnagar Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+/* ===== RESET ===== */
+*{margin:0; box-sizing:border-box;}
+
+:root{
+  --bg:#1a1a1a;
+  --black:#000;
+  --red:#8b0000;
+  --red-soft:#6e0000;
+  --card:#111;
+  --text:#b5b5b5;
+  --white:#fff;
+}
+
+/* ===== BASE ===== */
+body{
+  background:var(--bg);
+  font-family:"Roboto Condensed",sans-serif;
+  color:var(--text);
+}
+
+/* ===== NAV ===== */
+.nav{
+  width:80%;
+  margin:10px auto;
+  padding:18px 30px;
+  border-radius:18px;
+  background:rgba(0,0,0,0.65);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:10px;
+  left:0; right:0;
+  z-index:10;
+}
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:red;
+}
+.list li{list-style:none;}
+.list a{
+  color:white;
+  text-decoration:none;
+  padding:6px 12px;
+  border-radius:6px;
+}
+.list a:hover{
+  background:rgba(255,0,0,0.2);
+}
+
+/* ===== HERO ===== */
+.hero{
+  margin-top:110px;
+  padding:80px 20px;
+  text-align:center;
+  background:
+    radial-gradient(circle at top, rgba(139,0,0,0.9), rgba(0,0,0,1));
+}
+.hero h1{
+  color:white;
+  font-size:42px;
+  letter-spacing:1px;
+}
+.hero p{
+  margin-top:14px;
+  font-size:20px;
+}
+
+/* ===== SECTION ===== */
+.section{
+  width:90%;
+  max-width:1100px;
+  margin:60px auto;
+}
+
+/* ===== INFO CARDS ===== */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+.card{
+  background:linear-gradient(135deg,#111,var(--red-soft));
+  padding:28px;
+  border-radius:18px;
+  font-size:18px;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+}
+
+/* ===== TITLE ===== */
+.title{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:35px;
+  color:#d0d0d0;
+}
+
+/* ===== EVENTS ===== */
+.events{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
+}
+.event{
+  background:#111;
+  padding:20px;
+  border-radius:14px;
+  border-top:4px solid var(--red);
+  text-align:center;
+}
+
+/* ===== RULES ===== */
+.rules{
+  background:linear-gradient(135deg,var(--black),var(--red-soft));
+  padding:35px;
+  border-radius:20px;
+}
+.rules ul{
+  margin-top:15px;
+  padding-left:20px;
+}
+.rules li{
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+/* ===== CTA ===== */
+.cta{
+  margin:60px auto;
+  text-align:center;
+}
+.cta a{
+  display:inline-block;
+  padding:16px 42px;
+  border-radius:40px;
+  background:linear-gradient(to right,var(--red),#000);
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  text-decoration:none;
+  transition:.3s;
+}
+.cta a:hover{
+  transform:scale(1.08);
+}
+.home-btn{
+  padding:10px 28px;
+  background:#8b0000;
+  border-radius:30px;
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.home-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 10px rgba(255,0,0,0.4);
+}
+/* ===== FOOTER ===== */
+footer{
+  background:linear-gradient(to right,var(--red),#000);
+  padding:26px;
+  text-align:center;
+  font-size:18px;
+  margin-top:70px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .hero h1{font-size:30px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <span class="logo">Karate Ramnagar Academy</span>
+  <ul class="list">
+    <li><a href="index.html">← Back to Home</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Karate Championship</h1>
+  <p>Where Skill Meets Spirit & Competition</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2 class="title">About Championship</h2>
+  <div class="cards">
+    <div class="card">
+      Karate Championship provides students a platform to
+      showcase their skills, confidence, and fighting spirit.
+    </div>
+    <div class="card">
+      Participants compete with discipline, respect, and
+      sportsmanship under official rules.
+    </div>
+    <div class="card">
+      Championships help students gain experience,
+      self-belief, and competitive exposure.
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section">
+  <h2 class="title">Championship Events</h2>
+  <div class="events">
+    <div class="event">🥋 Kata Championship</div>
+    <div class="event">🥊 Kumite Championship</div>
+    <div class="event">👊 Individual & Team Events</div>
+    <div class="event">🏆 Medal & Trophy Awards</div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section class="section">
+  <h2 class="title">Rules & Eligibility</h2>
+  <div class="rules">
+    <ul>
+      <li>Only registered students can participate</li>
+      <li>Proper uniform & safety gear is mandatory</li>
+      <li>Events conducted according to age & belt category</li>
+      <li>Judges decision will be final</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<!--
+<div class="cta">
+  <a href="registration.html">Register for Championship</a>
+</div>
+-->
+
+<!-- FOOTER -->
+<footer>
+  © Karate Ramnagar Academy • Championship • Honour • Excellence
+</footer>
+
+</body>
+</html>

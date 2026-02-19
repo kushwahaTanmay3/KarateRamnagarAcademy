@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramnagar Branch | Karate Ramnagar Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;box-sizing:border-box;}
+body{
+    background:#1a1a1a;
+    font-family:"Roboto Condensed", sans-serif;
+    color:gray;
+}
+
+/* ================= NAVBAR ================= */
+.nav{
+    width:80%;
+    height:8vh;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(6px);
+    padding:0 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:5px;
+    margin: 2vh 12vh 0vh;
+    z-index:999;
+    border-radius:16px;
+}
+
+.logo{font-size:24px; font-weight:bold;color:red;}
+.list{display:flex;}
+.list li{list-style:none;margin-left:40px;}
+.list li a{
+    color:white;
+    text-decoration:none;
+    padding:8px;
+}
+.list li a:hover{
+    background:rgba(255,0,0,0.2);
+    border-radius:6px;
+}
+
+/* ================= HERO ================= */
+.branch-hero{
+    margin-top:100px; /* navbar gap */
+    padding-left: 40px ;
+    padding-right:1px;
+    background:linear-gradient(to right,#000,#8b0000);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:16px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.branch-text h1{
+    font-size:38px;
+    margin-bottom:15px;
+}
+.branch-text p{
+    font-size:18px;
+}
+
+.branch-img img{
+    height:380px;
+    mix-blend-mode:multiply;
+    border-radius: 16px;
+}
+
+/* ================= DETAILS ================= */
+.branch-card{
+    width:90%;
+    margin:50px auto;
+    padding:40px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#000,#7a0000);
+}
+
+.branch-card h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.branch-info{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.info-box{
+    width:260px;
+    padding:20px;
+    border-radius:12px;
+    background:rgba(0,0,0,0.5);
+    text-align:center;
+}
+
+/* ================= COACH ================= */
+.coach{
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    gap:40px;
+    align-items:center;
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:16px;
+}
+
+.coach img{
+    width:260px;
+    border-radius:16px;
+}
+
+.coach p{
+    font-size:18px;
+}
+
+/* ================= CAMPUS PHOTOS ================= */
+.campus-section{
+    width:90%;
+    margin:60px auto;
+    padding:40px;
+    border-radius:16px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(6px);
+}
+
+.campus-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+.campus-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.campus-gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:14px;
+    transition:0.3s;
+}
+.branch-img{
+    object-fit: cover;
+}
+
+.campus-gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(255,0,0,0.25);
+}
+/* ==google maps== */
+.map{
+    width:85%;
+    height:auto;
+    margin:60px auto;
+    padding:40px;
+    border-radius:16px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(6px);
+}
+
+.map h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:28px;
+}
+.mapbox{
+    padding:20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.mleft{
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-transform:capitalize;
+}
+.home{
+    text-align: center;
+}
+.home>a>button{
+font-size: 20px;
+padding:10px;
+border-radius: 16px;
+font-weight: bold;
+background:linear-gradient(to left,#8b0000,#000);
+ color:gray;
+}
+/* ================= FOOTER ================= */
+footer{
+    margin-top:60px;
+    height:10vh;
+    background:linear-gradient(to right,#8b0000,#000);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+@media(max-width:1024px){
+.branch-img>img{
+    position: relative;
+    left:-15px;
+    bottom:-5px
+}
+}
+@media(max-width:768px){
+    .logo{
+    font-size:20px;       
+    }
+    .branch-img>img{
+     width:260px;
+     left:-5px;
+     display:none;
+    }
+    .list{
+        font-size:16px;
+    }
+     .nav {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    height: auto;
+    padding: 15px;
+  }
+  .mapbox{
+    flex-direction: column;
+    row-gap:30px;
+  }
+  .coach>img{
+    width:180px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">Karate Ramnagar Academy</div>
+  <ul class="list">
+    <!-- <li><a href="index.html">← Back to Home</a></li> -->
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="branch-hero">
+  <div class="branch-text">
+    <h1>Katesar Branch</h1>
+    <p>Discipline • Strength • Respect</p>
+  </div>
+  <div class="branch-img">
+    <img src="Katesar.jpg" alt="">
+  </div>
+</section>
+
+<!-- DETAILS -->
+<div class="branch-card">
+  <h2>Branch Details</h2>
+  <div class="branch-info">
+    <div class="info-box">📍 Katesar,CHANDAULI</div>
+    <div class="info-box">⏰ 6 AM-8AM & ⏰4PM-8PM </div>
+    <div class="info-box">🥋 Kids & Adults</div>
+    <div class="info-box">🏆 State Level Training</div>
+  </div>
+</div>
+
+<!-- COACH -->
+<div class="coach">
+  <img src="KarateSir.png" alt="">
+  <p>
+    Head Coach with 15+ years of experience.  
+    National level certified trainer focusing on discipline,
+    fitness and self-defence.
+  </p>
+</div>
+
+<!-- CAMPUS PHOTOS -->
+<section class="campus-section">
+  <h2>Our Branch Campus</h2>
+  <div class="campus-gallery">
+    <img src="branchphoto2.jpeg">
+    <img src="gallery9.jpeg">
+    <img src="branchphoto5.jpeg">
+    <img src="branchphoto2.jpeg">
+  </div>
+</section>
+<section class="map">
+    <h2>Location</h2>
+    <div class="mapbox">
+    <div class="mleft"> 
+        <h3>Katesar</h3>
+        <h3>Padao,Chandauli</h3>
+        <h3>uttar pradesh 261135</h3>
+        <h3>India</h3>
+    </div>
+    <div class="mright">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.0162682821997!2d83.02708167568575!3d25.270038177664084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e310013457ba7%3A0x6adc4e534b824263!2sKarate%20Ramnagar%20Academy!5e0!3m2!1sen!2sin"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+<div class="home"> <a href="index.html"><Button>← Back to Home</Button></a></div>
+<footer>
+© 2026 Karate Ramnagar Academy | Ramnagar Branch
+</footer>
+
+</body>
+</html>
