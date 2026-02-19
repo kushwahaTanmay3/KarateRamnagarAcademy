@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Registration | Karate Ramnagar Academy  </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    min-height:100vh;
+     background-color: #1a1a1a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ===== MAIN WRAPPER ===== */
+.wrapper{
+    width:90%;
+    max-width:1100px;
+    display:flex;
+    gap:30px;
+}
+
+/* ===== LEFT BOX ===== */
+.left-box{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex:1;
+    min-height:420px;
+    border-radius:20px;
+    padding:30px;
+    color:#fff;
+    background: linear-gradient(to right, #000, #8b0000);
+    box-shadow:0 0 30px rgba(0,0,0,0.8);
+}
+
+.left-box h1{
+    font-size:28px;
+    margin-bottom:15px;
+    color:gray;
+}
+
+.left-box p{
+    font-size:14px;
+    line-height:1.6;
+    color:gray;
+}
+
+.right>img {
+  width:250px;
+  mix-blend-mode: multiply;
+}
+
+
+
+/* ===== RIGHT FORM BOX ===== */
+.form-box{
+    color:gray;
+    flex:1;
+    background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 0 30px rgba(0,0,0,0.7);
+}
+
+.form-box h2{
+    margin-bottom:8px;
+}
+
+.form-box small{
+    color:#666;
+}
+
+.form-box input{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    font-size:14px;
+}
+
+.form-box button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn-login{
+    background:linear-gradient(to right, #8b0000, #000);
+    color:#fff;
+}
+
+.btn-home{
+    margin-top:12px;
+   background:linear-gradient(to left, #8b0000, #000);
+   color:gray;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    .wrapper{
+        flex-direction:column;
+    }
+    .right>img{
+        width:195;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- LEFT INFO BOX -->
+    <div class="left-box">
+        <div class="left">
+        <h1>Karate Ramnager Academy</h1>
+        <p>
+            Discipline • strength • Respect
+        </p>
+        </div>
+        <div class="right">
+      <img src="akAI.png" alt="">
+    </div>
+    </div>
+
+   <!-- RIGHT FORM -->
+<div class="form-box">
+
+    <h2>Registration Form</h2>
+    <small>Fill the form below</small>
+
+    <!-- GOOGLE FORM IFRAME -->
+    <!-- <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSej3mmm0ENXtJVqdzlR9LFJIdGQYFC5TMXZaiUqcW-y9wnN3w/viewform?usp=publish-editor"
+        width="100%" 
+        height="420"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        style="border-radius:12px; margin-top:15px;">
+        Loading…
+    </iframe> -->
+
+    <form 
+    action="https://formspree.io/f/xwvnopel" 
+    method="POST"
+    class="contact-form"
+  >
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="tel" name="phone" placeholder="Enter Phone Number" required>
+     
+    <input type="text" name="address" placeholder="Enter Your Address" required>
+
+    <input type="number" name="age" placeholder="Your Age" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <button type="submit " class="first">Submit Form</button>
+  </form>
+
+
+    <!-- GO HOME BUTTON -->
+    <button 
+      type="button" 
+      class="btn-home" 
+      onclick="window.location.href='index.html'">
+      Go Home
+    </button>
+
+</div>
+
+    
+
+</div>
+
+</body>
+</html>
