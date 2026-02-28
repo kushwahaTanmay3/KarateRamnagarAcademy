@@ -38,7 +38,17 @@ body{
 .logo{color:red; font-size:24px; font-weight:bold;}
 
 .list li{list-style:none;}
-.list a{color:white; text-decoration:none; font-size:18px;}
+.list a{color:white; text-decoration:none;}
+.listBtn{
+  padding:10px 20px;
+  border-radius:10px;
+  font-size:16px;
+  transition:0.3s;
+}
+.listBtn:hover{
+  transform:translateY(-3px);
+  background:#7a0000;
+}
 
 /* ===== PAGE ===== */
 .tour-page{
@@ -67,38 +77,6 @@ body{
   box-shadow:0 5px 15px rgba(0,0,0,0.6);
 }
 
-/* ===== SLIDER ===== */
-.slider{
-  width:72%;
-  height:600px;
-  margin:0 auto 60px;
-  border-radius:18px;
-  overflow:hidden;
-  position:relative;
-  box-shadow:0 15px 30px rgba(0,0,0,0.6);
-}
-
-.slides{
-  display:flex;
-  width:300%;
-  height:100%;
-  animation:slide 12s infinite;
-}
-
-.slides img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-@keyframes slide{
-  0%{margin-left:0;}
-  33%{margin-left:0;}
-  36%{margin-left:-100%;}
-  66%{margin-left:-100%;}
-  69%{margin-left:-200%;}
-  100%{margin-left:-200%;}
-}
 
 /* ===== TOUR CARD ===== */
 .tour-card{
@@ -151,7 +129,7 @@ footer{
 <nav class="nav">
   <div class="logo">Karate Ramnagar Academy</div>
   <ul class="list">
-    <li><a href="index.html">← Back to Home</a></li>
+    <li class="listBtn"><a href="index.html">← Back to Home</a></li>
   </ul>
 </nav>
 
@@ -167,13 +145,7 @@ footer{
   <img src="Thailand.webp"  title="Thailand">
 </div>
 
-<!-- ===== GALLERY SLIDER ===== -->
-<!-- <div class="slider">
-  <div class="slides">
-    <img src="thailandTour.png">
-    <img src="UAEtour.png">
-  </div>
-</div> -->
+
 
 <!-- ===== TOUR DETAILS ===== -->
 <div class="tour-card">
@@ -236,3 +208,4 @@ Though she did not win a medal, her fighting spirit, discipline, and determinati
 
 </body>
 </html>
+
